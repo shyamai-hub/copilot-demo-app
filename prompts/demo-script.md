@@ -26,13 +26,13 @@
 - **Goal**: Capture functional and non-functional requirements, break them into JIRA-friendly work items (Epics → User Stories → Subtasks), and automate the creation of JIRA issues via MCP.
 - **Branch**: `feature/requirements-planning`
 - **Tasks**:
-  - Create `requirements/REQUIREMENTS.md` listing **functional** requirements (Product CRUD, search, validation, pagination, sorting/filtering) and **non-functional** requirements (performance targets, security, logging, monitoring, scalability, SLAs), plus clear acceptance criteria and basic test cases.
-  - Add `planning/JIRA_BREAKDOWN.md` mapping each requirement to JIRA **Epics**, **User Stories**, and **Subtasks**, with _story points_, _priority_, and _acceptance criteria_.
-  - Create `mcp/jira/` examples and instructions (e.g., `mcp/jira/create_issues.md`) with sample MCP prompt sequences to create Epics, Stories, and Subtasks programmatically, including linking (Epic → Story → Subtask).
+  - Create `docs/REQUIREMENTS.md` listing **functional** requirements (Product CRUD, search, validation, pagination, sorting/filtering) and **non-functional** requirements (performance targets, security, logging, monitoring, scalability, SLAs), plus clear acceptance criteria and basic test cases.
+    - Add `docs/JIRA_BREAKDOWN.md` mapping each requirement to JIRA **Epics**, **User Stories**, and **Subtasks**, with _story points_, _priority_, and _acceptance criteria_.
+    - Create `prompts/create_issues.md` examples and instructions with sample MCP prompt sequences to create Epics, Stories, and Subtasks programmatically, including linking (Epic → Story → Subtask).
 - **Prompts**:
-  - "Create `REQUIREMENTS.md` with functional and non-functional requirements for the Product feature and acceptance criteria."
-  - "Break the REQUIREMENTS into JIRA Epics → User Stories → Subtasks and produce `planning/JIRA_BREAKDOWN.md` with story points and acceptance criteria."
-  - "Provide MCP prompt examples to create a JIRA Epic named 'Products', add Stories linked to that Epic, and create Subtasks for implementation and testing."
+  - "Create `docs/REQUIREMENTS.md` with functional and non-functional requirements for the Product feature and acceptance criteria."
+    - "Break the REQUIREMENTS into JIRA Epics → User Stories → Subtasks and produce `docs/JIRA_BREAKDOWN.md` with story points and acceptance criteria."
+      - "Update 'prompts/create_issues.md' to create a JIRA Epic named '{EPIC_NAME}' in project '{JIRA_PROJECT_NAME}', add Stories linked to that Epic, and create Subtasks for implementation and testing with acceptance criteria."
 
 ## Phase 3: Architecture & Design
 
